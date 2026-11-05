@@ -1,0 +1,75 @@
+Python 3.15.2 (tags/v3.15.2:5e58eaa, Oct 25 2026, 17:27:03) [MSC v.1951 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+... import math
+... a_kw = float(input("Podaj a: "))
+... b_kw = float(input("Podaj b: "))
+... c_kw = float(input("Podaj c: "))
+... if a_kw == 0:
+...     print("To nie jest równanie kwadratowe.")
+... else:
+...     delta = b_kw**2 - 4 * a_kw * c_kw
+...     if delta > 0:
+...         x1 = (-b_kw - math.sqrt(delta)) / (2 * a_kw)
+...         x2 = (-b_kw + math.sqrt(delta)) / (2 * a_kw)
+...         print(f"x1 = {x1:.2f}, x2 = {x2:.2f}")
+...     elif delta == 0:
+...         x0 = -b_kw / (2 * a_kw)
+...         print(f"x0 = {x0:.2f}")
+...     else:
+...         print("Brak rozwiązań.")
+...
+... # Zadanie 9
+... n1 = float(input("Podaj pierwszą liczbę: "))
+... n2 = float(input("Podaj drugą liczbę: "))
+... print(f"Dodawanie: {n1 + n2}")
+... print(f"Odejmowanie: {n1 - n2}")
+... print(f"Mnożenie: {n1 * n2}")
+... if n2 != 0:
+...     print(f"Dzielenie: {n1 / n2:.2f}")
+... else:
+...     print("Nie można dzielić przez zero.")
+... print(f"Potęgowanie: {n1 ** n2}")
+
+<class 'int'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+3
+3.0
+3.0
+12.4
+False
+Studiuję na WSIiZ
+Nazywam się Jan i mam 20 lat.
+Mój wzrost to 178 cm.
+Cena po rabacie: 31.99 PLN
+Podaj bok a: 3
+Podaj bok b: 5
+Pole: 15.0
+Obwód: 16.0
+Podaj średnie spalanie (l/100 km): 6
+Podaj cenę paliwa za litr: 8
+Trasa: 220 km
+Zużycie paliwa: 13.20 l
+Koszt podróży: 105.60 zł
+Podaj a: 3
+Podaj b: 6
+x = -2.00
+Podaj a: 1
+Podaj b: 9
+Podaj c: -3
+x1 = -9.32, x2 = 0.32
+Podaj pierwszą liczbę: 2
+Podaj drugą liczbę: 9
+Dodawanie: 11.0
+Odejmowanie: -7.0
+Mnożenie: 18.0
+Dzielenie: 0.22
+Potęgowanie: 512.0
+>>>
+>>>
